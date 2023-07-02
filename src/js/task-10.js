@@ -23,6 +23,7 @@ function createBoxes(amount) {
     size += 10;
   }
 }
+
 function destroyBoxes() {
   boxesContainer.innerHTML = "";
 }
