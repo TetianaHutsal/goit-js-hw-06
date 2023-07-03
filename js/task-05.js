@@ -1,10 +1,7 @@
-const nameInput = document.getElementById("name-input");
-const nameOutput = document.getElementById("name-output");
+const nameInput = document.querySelector("#name-input");
+const nameOutput = document.querySelector("#name-output");
 
 nameInput.addEventListener("input", () => {
-  if (nameInput.ariaValueMax.trim() === "") {
-    nameOutput.textContent = "Anonymous";
-  } else {
-    nameOutput.textContent = nameInput.value;
-  }
+  const inputValue = nameInput.value.trim();
+  nameOutput.textContent = inputValue !== "" ? inputValue : "Anonymous";
 });

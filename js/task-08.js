@@ -19,6 +19,6 @@ function OnSubmit(event) {
   }
 
   console.log(submitObject);
-  event,currentTarget.reset();
+  event.currentTarget.reset();
 }
 
